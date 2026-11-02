@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>404 — 4Speach</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700;800&family=Noto+Sans+Georgian:wght@400;700;800&family=Noto+Sans+Devanagari:wght@400;700;800&display=swap">
+<style>
+:root{
+  --paper:#fff; --soft:#f3f5f9; --blue:#2148ef; --blue-dark:#1537c7;
+  --muted:#596171; --line:#dce1eb; --ink:#141a2c; --orange:#fa653c;
+  --f:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  color-scheme:light;
+}
+:root[lang="ar"],:root[lang="fa"]{--f:'Noto Sans Arabic','Inter',system-ui,sans-serif}
+:root[lang="ka"]{--f:'Noto Sans Georgian','Inter',system-ui,sans-serif}
+:root[lang="hi"]{--f:'Noto Sans Devanagari','Inter',system-ui,sans-serif}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.page{min-height:100%;display:grid;place-items:center;padding:40px 24px}
+.box{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;max-width:52ch}
+.code{font-size:13px;font-weight:700;letter-spacing:2px;color:var(--muted);display:flex;align-items:center;gap:11px}
+.code::before{content:"";width:18px;height:3px;border-radius:2px;background:var(--orange)}
+h1{margin:0;font-size:clamp(26px,4.4vw,40px);line-height:1.15;letter-spacing:-1.4px;font-weight:800;text-wrap:balance}
+p{margin:0;color:var(--muted);font-size:17px}
+.btn{display:inline-flex;align-items:center;gap:9px;margin-top:6px;font-size:16px;font-weight:600;padding:15px 24px;border-radius:9px;background:var(--blue);color:#fff;text-decoration:none;transition:background .15s ease}
+.btn:hover{background:var(--blue-dark)}
+.btn:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+
+/* грустный робот: рот перевёрнут, волны обвисли */
+.sad{width:170px;height:92px;display:block}
+.sad svg{width:100%;height:100%;overflow:visible}
+.face{fill:var(--blue)}
+.eye{fill:#fff}
+.mouth{fill:#fff;transform-box:fill-box;transform-origin:50% 50%;animation:sigh 3.4s ease-in-out infinite}
+.tear{fill:#8fa6ff;opacity:0;animation:drip 3.4s ease-in-out infinite}
+.wave{fill:none;stroke:var(--line);stroke-width:2.2;stroke-linecap:round}
+@keyframes sigh{0%,100%{transform:translateY(0)}50%{transform:translateY(1.2px)}}
+@keyframes drip{0%,55%{opacity:0;transform:translateY(0)}65%{opacity:.9}100%{opacity:0;transform:translateY(9px)}}
+@media (prefers-reduced-motion:reduce){.mouth,.tear{animation:none}.tear{opacity:.8}}
+</style>
+<!-- Yandex.Metrika counter: запускается только после согласия на cookie -->
+<script type="text/javascript">
+    window.ymLoad = function () {
+        window.ymLoad = function () {};
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113404000', 'ym');
+
+        ym(113404000, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    };
+    try { if (localStorage.getItem('4s_consent') === 'yes') { window.ymLoad(); } } catch (e) {}
+</script>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div class="page">
+  <div class="box">
+    <span class="sad" aria-hidden="true">
+      <svg viewBox="0 0 62 34" xmlns="http://www.w3.org/2000/svg">
+        <path class="wave" d="M13 13.5Q9.6 17 13 20.5"/>
+        <path class="wave" d="M49 13.5Q52.4 17 49 20.5"/>
+        <rect class="face" x="17" y="3" width="28" height="28" rx="9"/>
+        <circle class="eye" cx="25.6" cy="13.4" r="2.1"/>
+        <circle class="eye" cx="36.4" cy="13.4" r="2.1"/>
+        <path class="mouth" d="M25.4 25.2a5.6 5.6 0 0 1 11.2 0z"/>
+        <path class="tear" d="M25.6 17.2c1 1.5 1.7 2.6 1.7 3.4a1.7 1.7 0 0 1-3.4 0c0-.8.7-1.9 1.7-3.4z"/>
+      </svg>
+    </span>
+    <span class="code">404</span>
+    <h1 id="t">Sorry, friend, this page is not here.</h1>
+    <p id="s">The address is wrong, or the page has moved.</p>
+    <a class="btn" href="/" id="b">Back to the home page →</a>
+  </div>
+</div>
+<script>
+(function(){
+  var T = {"en": ["Sorry, friend, this page is not here.", "The address is wrong, or the page has moved.", "Back to the home page"], "ru": ["Извини, друг, страница не найдена!", "Адрес неверный или страница переехала.", "На главную"], "de": ["Tut mir leid, Freund, diese Seite gibt es nicht.", "Die Adresse stimmt nicht, oder die Seite ist umgezogen.", "Zur Startseite"], "fr": ["Désolé l'ami, cette page est introuvable.", "L'adresse est erronée, ou la page a déménagé.", "Retour à l'accueil"], "es": ["Lo siento, amigo, esta página no está.", "La dirección es incorrecta, o la página se ha movido.", "Volver al inicio"], "it": ["Scusa amico, questa pagina non c'è.", "L'indirizzo è sbagliato, oppure la pagina è stata spostata.", "Torna alla home"], "pt": ["Desculpa, amigo, esta página não existe.", "O endereço está errado, ou a página mudou de lugar.", "Voltar ao início"], "nl": ["Sorry vriend, deze pagina is er niet.", "Het adres klopt niet, of de pagina is verhuisd.", "Terug naar de homepage"], "pl": ["Wybacz, przyjacielu, tej strony nie ma.", "Adres jest błędny albo strona się przeniosła.", "Na stronę główną"], "uk": ["Вибач, друже, сторінку не знайдено!", "Адреса неправильна або сторінка переїхала.", "На головну"], "tr": ["Üzgünüm dostum, bu sayfa burada yok.", "Adres yanlış ya da sayfa taşındı.", "Ana sayfaya dön"], "zh": ["抱歉，朋友，这个页面不在这里。", "地址有误，或者页面已经搬走了。", "回到首页"], "ja": ["ごめんなさい、このページは見つかりません。", "アドレスが違うか、ページが移動しました。", "トップページへ"], "ko": ["미안해요, 이 페이지는 없네요.", "주소가 잘못되었거나 페이지가 옮겨졌습니다.", "홈으로 돌아가기"], "hi": ["माफ़ करना दोस्त, यह पेज नहीं मिला।", "पता ग़लत है, या पेज कहीं और चला गया है।", "मुख्य पेज पर वापस"], "ar": ["آسفون يا صديقي، هذه الصفحة غير موجودة.", "العنوان غير صحيح، أو أن الصفحة انتقلت.", "العودة إلى الصفحة الرئيسية"], "fa": ["ببخشید دوست من، این صفحه پیدا نشد.", "نشانی درست نیست، یا صفحه جابه‌جا شده است.", "بازگشت به صفحهٔ اصلی"], "kk": ["Кешір, дос, бет табылмады!", "Мекенжай қате немесе бет көшіп кеткен.", "Басты бетке"], "uz": ["Kechir, do‘stim, bu sahifa topilmadi.", "Manzil noto‘g‘ri yoki sahifa ko‘chirilgan.", "Bosh sahifaga"], "ka": ["მაპატიე, მეგობარო, გვერდი ვერ მოიძებნა.", "მისამართი არასწორია, ან გვერდი გადავიდა.", "მთავარ გვერდზე"], "vi": ["Xin lỗi bạn, không tìm thấy trang này.", "Địa chỉ sai, hoặc trang đã chuyển đi nơi khác.", "Về trang chủ"]};
+  var RTL = ["ar", "fa"];
+  var GEO = {RU:'ru',BY:'ru',KG:'ru',TJ:'ru',MD:'ru',AM:'ru',UA:'uk',DE:'de',AT:'de',CH:'de',
+    FR:'fr',BE:'fr',LU:'fr',ES:'es',MX:'es',AR:'es',CO:'es',CL:'es',PE:'es',IT:'it',PT:'pt',
+    BR:'pt',NL:'nl',PL:'pl',TR:'tr',CN:'zh',TW:'zh',HK:'zh',SG:'zh',JP:'ja',KR:'ko',IN:'hi',
+    SA:'ar',AE:'ar',EG:'ar',IQ:'ar',MA:'ar',DZ:'ar',IR:'fa',AF:'fa',KZ:'kk',UZ:'uz',GE:'ka',VN:'vi'};
+  function pick(){
+    try { var s = localStorage.getItem('4s.lang'); if (s && T[s]) return s; } catch (e) {}
+    // язык из адреса, по которому человек промахнулся: /ru/что-то
+    var m = /^\/([a-z]{2})(\/|$)/.exec(location.pathname);
+    if (m && T[m[1]]) return m[1];
+    var list = navigator.languages || [navigator.language || ''];
+    for (var i = 0; i < list.length; i++) {
+      var tag = String(list[i]).toLowerCase(), p = tag.split('-')[0], r = tag.split('-')[1];
+      if (r && GEO[r.toUpperCase()] && T[GEO[r.toUpperCase()]]) return GEO[r.toUpperCase()];
+      if (T[p]) return p;
+    }
+    return 'en';
+  }
+  var c = pick(), v = T[c];
+  document.documentElement.lang = c;
+  if (RTL.indexOf(c) >= 0) document.documentElement.dir = 'rtl';
+  document.getElementById('t').textContent = v[0];
+  document.getElementById('s').textContent = v[1];
+  document.getElementById('b').textContent = v[2] + ' \u2192';
+  document.getElementById('b').href = c === 'en' ? '/' : '/' + c + '/';
+  document.title = '404 — 4Speach';
+})();
+</script>
+</body>
+</html>

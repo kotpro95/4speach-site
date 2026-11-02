@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="ko" data-base="/" data-geo="php">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>4Speach — 통화용 실시간 음성 번역기</title>
+<meta name="description" content="상대는 자기 언어로 말하고 당신은 헤드폰으로 번역을 듣습니다. Zoom, Meet, Telegram, Discord 지원. 최대 1초, 21개 언어, 내 목소리로.">
+<link rel="canonical" href="https://4speach.com/ko/">
+<link rel="alternate" hreflang="en" href="https://4speach.com/">
+<link rel="alternate" hreflang="ru" href="https://4speach.com/ru/">
+<link rel="alternate" hreflang="de" href="https://4speach.com/de/">
+<link rel="alternate" hreflang="fr" href="https://4speach.com/fr/">
+<link rel="alternate" hreflang="es" href="https://4speach.com/es/">
+<link rel="alternate" hreflang="it" href="https://4speach.com/it/">
+<link rel="alternate" hreflang="pt" href="https://4speach.com/pt/">
+<link rel="alternate" hreflang="nl" href="https://4speach.com/nl/">
+<link rel="alternate" hreflang="pl" href="https://4speach.com/pl/">
+<link rel="alternate" hreflang="uk" href="https://4speach.com/uk/">
+<link rel="alternate" hreflang="tr" href="https://4speach.com/tr/">
+<link rel="alternate" hreflang="zh" href="https://4speach.com/zh/">
+<link rel="alternate" hreflang="ja" href="https://4speach.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://4speach.com/ko/">
+<link rel="alternate" hreflang="hi" href="https://4speach.com/hi/">
+<link rel="alternate" hreflang="ar" href="https://4speach.com/ar/">
+<link rel="alternate" hreflang="fa" href="https://4speach.com/fa/">
+<link rel="alternate" hreflang="kk" href="https://4speach.com/kk/">
+<link rel="alternate" hreflang="uz" href="https://4speach.com/uz/">
+<link rel="alternate" hreflang="ka" href="https://4speach.com/ka/">
+<link rel="alternate" hreflang="vi" href="https://4speach.com/vi/">
+<link rel="alternate" hreflang="x-default" href="https://4speach.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="4Speach">
+<meta property="og:title" content="4Speach — 통화용 실시간 음성 번역기">
+<meta property="og:description" content="상대는 자기 언어로 말하고 당신은 헤드폰으로 번역을 듣습니다. Zoom, Meet, Telegram, Discord 지원. 최대 1초, 21개 언어, 내 목소리로.">
+<meta property="og:url" content="https://4speach.com/ko/">
+<meta property="og:image" content="https://4speach.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"4Speach","applicationCategory":"BusinessApplication","operatingSystem":"Windows 10, Windows 11","url":"https://4speach.com/ko/","inLanguage":"ko","description":"상대는 자기 언어로 말하고 당신은 헤드폰으로 번역을 듣습니다. Zoom, Meet, Telegram, Discord 지원. 최대 1초, 21개 언어, 내 목소리로."},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"상대가 제가 번역기를 쓰는 걸 알게 되나요?","acceptedAnswer":{"@type":"Answer","text":"발신 번역을 켰을 때만 그렇습니다. 그때 상대는 합성 음성을 듣습니다. 수신 번역은 당신의 헤드폰에서만 들리므로 상대는 알 수 없습니다. 수신만 쓰는 사람도 많습니다. 말은 귀로 이해하고 대답은 직접 합니다."}},{"@type":"Question","name":"제 대화는 어디로 가나요?","acceptedAnswer":{"@type":"Answer","text":"오디오는 암호화된 채널로 Google 인프라에 있는 저희 클라우드로 전송되어 모든 보안 조건을 지키며 처리됩니다. 대화 녹음은 공개하지 않고 제3자에게 넘기지도 않습니다."}},{"@type":"Question","name":"실시간 음성 번역에 고성능 컴퓨터가 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 무거운 연산은 모두 클라우드에서 처리되므로 그래픽카드가 필요하지 않습니다. 안정적인 인터넷이 있는 일반 업무용 노트북으로 충분합니다."}},{"@type":"Question","name":"중요한 대목에서 번역이 틀리면요?","acceptedAnswer":{"@type":"Answer","text":"그래서 창에 자막이 있습니다. 원문은 회색, 번역은 굵게 표시됩니다. 미심쩍은 문장은 바로 눈에 띄고 그 자리에서 되물을 수 있습니다. 기계 번역은 대화의 보조이지, 계약서에 서명할 때의 변호사를 대신하지 않습니다."}},{"@type":"Question","name":"동시통역의 지연은 얼마인가요?","acceptedAnswer":{"@type":"Answer","text":"최대 1초입니다. 측정 결과 당신의 말은 0.98초 만에 번역되어 상대에게 전달됩니다 — 문장이 끝난 시점부터 번역의 첫 소리까지 기준입니다. 모두가 기다리는 공백이 아니라 평범한 대화의 속도입니다."}},{"@type":"Question","name":"음성 번역기가 Mac에서도 되나요?","acceptedAnswer":{"@type":"Answer","text":"현재는 Windows 10과 11입니다. macOS 버전은 작업 중이며, 아래에 이메일을 남겨 주시면 출시 당일에 알려 드립니다."}},{"@type":"Question","name":"저와 맞지 않으면요?","acceptedAnswer":{"@type":"Answer","text":"무엇이든 결제하기 전에 실제 본인 통화에서 제품을 먼저 확인해 보세요. 맞지 않으면 30일 안에 요청만 하시면 이유를 묻지 않고 환불합니다."}}]}]}</script>
+<style>body{margin:0}img{max-width:100%}</style>
+<!-- Yandex.Metrika counter: запускается только после согласия на cookie -->
+<script type="text/javascript">
+    window.ymLoad = function () {
+        window.ymLoad = function () {};
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113404000', 'ym');
+
+        ym(113404000, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    };
+    try { if (localStorage.getItem('4s_consent') === 'yes') { window.ymLoad(); } } catch (e) {}
+</script>
+<!-- /Yandex.Metrika counter -->
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;700;800&family=Noto+Sans+Georgian:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: светлая бумага, колонка 1120px, чередование белых и мягких серо-голубых полос;
+   мотив — пара реплик «оригинал / перевод» в зацикленном диалоге */
+:root{
+  --paper:#fff;
+  --soft:#f3f5f9;
+  --blue:#2148ef;
+  --blue-dark:#1537c7;
+  --blue-wash:#eef2fe;
+  --muted:#596171;
+  --line:#dce1eb;
+  --line-soft:#edf0f6;
+  --ink:#141a2c;
+  --orange:#fa653c;
+  --radius:22px;
+  --f:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  color-scheme:light;
+}
+:root[lang="ar"],:root[lang="fa"]{--f:'Noto Sans Arabic','Inter',system-ui,sans-serif}
+:root[lang="ka"]{--f:'Noto Sans Georgian','Inter',system-ui,sans-serif}
+:root[lang="hi"]{--f:'Noto Sans Devanagari','Inter',system-ui,sans-serif}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:24px}
+section{padding-block:clamp(54px,7vw,88px)}
+.band{background:var(--soft)}
+h1,h2,h3{margin:0;text-wrap:balance;font-weight:700}
+h1{font-size:clamp(33px,5vw,52px);line-height:1.09;letter-spacing:-2px;font-weight:800}
+h2{font-size:clamp(26px,3.4vw,34px);line-height:1.17;letter-spacing:-1.4px}
+h3{font-size:21px;line-height:1.27;letter-spacing:-.5px}
+h1 .alt{color:var(--blue)}
+p{margin:0}
+a{color:var(--blue)}
+.lead{color:var(--muted);font-size:17px;max-width:64ch}
+.stack{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.fine{color:var(--muted);font-size:13.5px;max-width:86ch}
+
+.eyebrow{display:flex;align-items:center;gap:11px;font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.eyebrow::before{content:"";width:18px;height:3px;border-radius:2px;background:var(--orange);flex:none}
+
+.btn{display:inline-flex;align-items:center;gap:9px;font-family:inherit;font-size:16px;font-weight:600;padding:15px 22px;border-radius:9px;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:background .15s ease,border-color .15s ease}
+.btn-main{background:var(--blue);color:#fff}
+.btn-main:hover{background:var(--blue-dark)}
+.btn-ghost{background:var(--paper);border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+
+header{border-bottom:1px solid var(--line-soft);position:sticky;top:env(safe-area-inset-top,0px);background:var(--paper);z-index:20}
+.head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:14px}
+.head-right{display:flex;align-items:center;gap:10px}
+.logo{display:flex;align-items:center;gap:10px;font-size:23px;font-weight:800;letter-spacing:-1px;color:var(--ink);text-decoration:none;font-family:'Inter',sans-serif}
+
+.mark{display:block;width:58px;height:30px;flex:none}
+.mark svg{display:block;width:100%;height:100%;overflow:visible}
+.mark .face{fill:var(--blue)}
+.mark .eye{fill:#fff}
+.mark .mouth{fill:#fff;transform-box:fill-box;transform-origin:50% 0;animation:talk 1.6s steps(1,end) infinite}
+.mark .wave{fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linecap:round;opacity:0;transform-box:view-box;transform-origin:50% 50%;animation:ping 2s ease-out infinite}
+.mark .wave.d2{animation-delay:.6s}
+@keyframes talk{
+  0%{transform:scaleY(1)} 12%{transform:scaleY(.3)} 24%{transform:scaleY(.85)}
+  36%{transform:scaleY(.35)} 48%{transform:scaleY(1)} 60%{transform:scaleY(.4)}
+  72%{transform:scaleY(.75)} 84%{transform:scaleY(.3)} 100%{transform:scaleY(1)}
+}
+@keyframes ping{0%{opacity:0;transform:scale(.88)}20%{opacity:.75}100%{opacity:0;transform:scale(1.16)}}
+
+.lang{position:relative}
+.lang-btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:15px;font-weight:600;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:10px 14px;cursor:pointer}
+.lang-btn:hover{border-color:var(--ink)}
+.lang-btn .globe{width:16px;height:16px;flex:none;stroke:var(--blue);fill:none;stroke-width:1.7}
+.lang-btn .caret{font-size:11px;color:var(--muted)}
+.lang-menu{position:absolute;inset-inline-end:0;top:calc(100% + 8px);background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 44px rgba(22,40,73,.14);padding:8px;display:grid;grid-template-columns:repeat(3,minmax(140px,1fr));gap:2px;max-height:min(70vh,440px);overflow:auto;z-index:30}
+.lang-menu[hidden]{display:none}
+.lang-menu a{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;font:inherit;font-size:14.5px;text-align:start;text-decoration:none;background:none;border:0;border-radius:8px;padding:9px 11px;cursor:pointer;color:var(--ink)}
+.lang-menu a:hover{background:var(--soft)}
+.lang-menu a[aria-current="true"]{background:var(--blue-wash);color:var(--blue);font-weight:700}
+.lang-menu .code{font-size:11.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
+.lang-menu a[aria-current="true"] .code{color:var(--blue)}
+
+.epigraph{margin:0;max-width:62ch;padding-block:36px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.epigraph blockquote{margin:0;font-style:italic;font-size:16.5px;line-height:1.55;color:var(--muted);text-wrap:pretty}
+.epigraph figcaption{font-size:12.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+
+.hero{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,5vw,56px);align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;font-weight:600;color:var(--muted);background:var(--soft);border-radius:8px;padding:7px 12px}
+.chip b{color:var(--blue)}
+
+.dialog{display:flex;flex-direction:column;gap:12px;background:var(--soft);border-radius:var(--radius);padding:22px}
+.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+.dialog-head .live{display:inline-flex;align-items:center;gap:7px;color:var(--blue)}
+.dialog-head .live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue);animation:blink 2s ease-in-out infinite}
+.turn{position:relative;border-radius:14px;padding:15px 17px;box-shadow:0 8px 24px rgba(22,40,73,.05);animation:spk 12s ease-in-out infinite;animation-delay:var(--t)}
+.turn.them{background:var(--blue);color:#fff;margin-inline-end:26px}
+.turn.you{background:var(--paper);border:1px solid var(--line-soft);margin-inline-start:26px}
+.who{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:9px;padding-inline-end:58px}
+.turn.them .who{color:#bfcdff}
+.turn.you .who{color:var(--muted)}
+.ava{width:21px;height:21px;border-radius:50%;display:grid;place-items:center;font-size:10.5px;font-weight:700;letter-spacing:0;flex:none}
+.turn.them .ava{background:rgba(255,255,255,.22);color:#fff}
+.turn.you .ava{background:var(--blue-wash);color:var(--blue)}
+.eq{display:inline-flex;align-items:flex-end;gap:2.5px;height:12px;margin-inline-start:auto;animation:eqfade 12s ease-in-out infinite;animation-delay:var(--t)}
+.eq i{width:2.5px;border-radius:2px;background:currentColor;animation:bar .9s ease-in-out infinite}
+.eq i:nth-child(2){animation-delay:.15s}
+.eq i:nth-child(3){animation-delay:.3s}
+.eq i:nth-child(4){animation-delay:.45s}
+.said{font-size:16.5px;line-height:1.35;letter-spacing:-.3px;font-weight:700}
+.heard{display:grid;grid-template-columns:15px 1fr;gap:8px;margin-top:11px;padding-top:11px;font-size:14.5px;line-height:1.4;animation:fadein 12s ease-in-out infinite;animation-delay:var(--t)}
+.heard::before{content:"\2193";font-weight:700}
+.turn.them .heard{border-top:1px solid rgba(255,255,255,.25);color:#e4eaff}
+.turn.them .heard::before{color:#fff}
+.turn.you .heard{border-top:1px solid var(--line-soft);color:var(--muted)}
+.turn.you .heard::before{color:var(--blue)}
+.lat{position:absolute;top:13px;inset-inline-end:16px;font-size:11px;font-weight:700;letter-spacing:.4px;padding:3px 8px;border-radius:7px;font-variant-numeric:tabular-nums;animation:pop 12s ease-in-out infinite;animation-delay:var(--t)}
+.turn.them .lat{background:rgba(255,255,255,.2);color:#fff}
+.turn.you .lat{background:var(--blue-wash);color:var(--blue)}
+@keyframes spk{
+  0%{transform:none;box-shadow:0 8px 24px rgba(22,40,73,.05)}
+  3%{transform:translateY(-4px);box-shadow:0 14px 32px rgba(33,72,239,.2)}
+  28%{transform:translateY(-4px);box-shadow:0 14px 32px rgba(33,72,239,.2)}
+  34%,100%{transform:none;box-shadow:0 8px 24px rgba(22,40,73,.05)}
+}
+@keyframes eqfade{0%{opacity:.25}4%,28%{opacity:1}34%,100%{opacity:.25}}
+@keyframes bar{0%,100%{height:3px}50%{height:12px}}
+@keyframes fadein{0%{opacity:.5}10%{opacity:.5}16%,30%{opacity:1}36%,100%{opacity:.6}}
+@keyframes pop{0%,8%{opacity:.45;transform:scale(.94)}15%,30%{opacity:1;transform:none}36%,100%{opacity:.45;transform:scale(.94)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){
+  .turn,.eq,.heard,.lat,.eq i,.dialog-head .live::before,.mark .mouth,.mark .wave{animation:none}
+  .heard,.lat{opacity:1}
+  .mark .wave{opacity:.45}
+}
+.dialog-foot{display:grid;grid-template-columns:18px 1fr;gap:9px;color:var(--muted);font-size:13.5px;line-height:1.45;margin-top:4px}
+.dialog-foot::before{content:"\21B3";color:var(--orange);font-weight:700}
+
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.card .kick{font-size:12.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
+.card p{color:var(--muted);font-size:15.5px}
+@supports (grid-template-rows:subgrid){
+  .grid.sub3 .card,.grid.sub2 .card{display:grid;grid-template-rows:subgrid}
+  .grid.sub3 .card{grid-row:span 3}
+  .grid.sub2 .card{grid-row:span 2}
+  .cols .col{display:grid;grid-template-rows:subgrid;grid-row:span 3;gap:0}
+}
+
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.col{border-top:1px solid var(--line);padding-top:16px;min-width:0}
+.col .num{font-size:12.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.col h3{font-size:19px}
+.col p{color:var(--muted);font-size:15px;margin-top:8px}
+
+.rows{display:grid}
+.rowitem{display:grid;grid-template-columns:34px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.rowitem:last-child{border-bottom:0}
+.rowitem .n{font-size:13px;font-weight:700;color:var(--blue);padding-top:3px;font-variant-numeric:tabular-nums}
+.rowitem p{color:var(--muted);font-size:15.5px;margin-top:5px}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px}
+.fact{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px}
+.fact b{display:block;font-size:clamp(24px,3vw,31px);font-weight:800;letter-spacing:-1.3px;font-variant-numeric:tabular-nums}
+.fact span{color:var(--muted);font-size:14px;line-height:1.4;display:block;margin-top:6px}
+
+.plan{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.plan.feature{border-color:var(--blue);box-shadow:0 10px 30px rgba(22,40,73,.06)}
+.price{font-size:38px;font-weight:800;letter-spacing:-1.8px;font-variant-numeric:tabular-nums}
+.price .amount{font-variant-numeric:tabular-nums}
+.price small{display:block;font-size:15px;font-weight:500;color:var(--muted);letter-spacing:-.2px;margin-top:2px}
+.plan ul{list-style:none;margin:0;padding:0;display:grid;gap:11px;font-size:15.5px;color:var(--muted)}
+.plan li{display:grid;grid-template-columns:16px 1fr;gap:10px}
+.plan li::before{content:"\2192";color:var(--blue);font-weight:700}
+:root[dir="rtl"] .plan li::before{content:"\2190"}
+.tag{align-self:flex-start;font-size:11.5px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:#fff;background:var(--blue);padding:5px 11px;border-radius:7px}
+.plan .btn{justify-content:center;margin-top:auto}
+
+details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:12px}
+details[open]{border-color:var(--blue)}
+summary{cursor:pointer;font-weight:700;font-size:17px;letter-spacing:-.4px;list-style:none;display:flex;justify-content:space-between;gap:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--blue);font-weight:600}
+details[open] summary::after{content:"\2013"}
+details p{color:var(--muted);font-size:15.5px;margin-top:12px;max-width:74ch}
+
+.final{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(26px,4vw,48px);align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(28px,4.5vw,48px)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+#lead .wide{grid-column:1/-1}
+input[type=text],input[type=tel],input[type=email]{min-width:0;background:var(--paper);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:15px 18px;font:inherit;font-size:16px}
+input::placeholder{color:#9aa3b5}
+input:focus-visible{outline:2px solid var(--blue);outline-offset:1px}
+.ok-msg{color:var(--blue);font-weight:600}
+.err-msg{color:var(--orange);font-weight:600}
+input.bad{border-color:var(--orange)}
+.tariffs{grid-column:1/-1;border:0;margin:0 0 6px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.tcard{position:relative;display:flex;flex-direction:column;gap:4px;cursor:pointer;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;min-width:0}
+.tcard input{position:absolute;opacity:0;pointer-events:none}
+.tcard:has(input:checked){border-color:var(--blue);box-shadow:inset 0 0 0 1px var(--blue)}
+.tcard:has(input:focus-visible){outline:2px solid var(--blue);outline-offset:2px}
+.tname{font-weight:700;font-size:16px}
+.tprice{font-size:14px;color:var(--muted)}
+.tprice b{font-size:20px;color:var(--ink);font-variant-numeric:tabular-nums}
+.tunit{font-size:13px;color:var(--muted)}
+.tnote{grid-column:1/-1;margin:0}
+.inbox{background:var(--soft);border-radius:var(--radius);padding:24px;display:grid;gap:0}
+.inbox .it{padding:14px 0;border-bottom:1px solid var(--line)}
+.inbox .it:last-child{border-bottom:0}
+.inbox .it b{display:block;font-size:16px;letter-spacing:-.3px}
+.inbox .it span{color:var(--muted);font-size:14px}
+
+footer{border-top:1px solid var(--line);padding-block:44px;color:var(--muted);font-size:14.5px}
+.foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}
+.foot strong{color:var(--ink);display:block;margin-bottom:10px}
+footer a{color:var(--muted);text-decoration:none;display:block;padding:4px 0}
+footer a:hover{color:var(--blue)}
+.sel{user-select:all;color:var(--ink);font-weight:500}
+
+.cc{position:fixed;inset-inline:16px;bottom:16px;z-index:50;margin-inline:auto;max-width:720px;
+display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;
+background:var(--paper);border:1px solid var(--line);border-radius:14px;
+padding:18px 20px;box-shadow:0 18px 44px rgba(22,40,73,.16)}
+.cc[hidden]{display:none}
+.cc-text{color:var(--muted);font-size:14px;line-height:1.5}
+.cc-btns{display:flex;gap:10px;flex:none}
+.cc-btns .btn{padding:11px 16px;font-size:15px}
+@media(max-width:640px){
+  .cc{grid-template-columns:1fr;gap:12px}
+  .cc-btns{display:grid;grid-template-columns:1fr 1fr}
+}
+footer p a.sel{display:inline;padding:0;text-decoration:none}
+footer p a.sel:hover{color:var(--blue)}
+
+@media(max-width:900px){
+  .hero,.final,.g3,.g2{grid-template-columns:1fr}
+  .cols,.facts{grid-template-columns:repeat(2,1fr)}
+  .foot{grid-template-columns:1fr 1fr}
+  .lang-menu{grid-template-columns:repeat(2,minmax(132px,1fr))}
+  h1{letter-spacing:-1.2px}
+  h2{letter-spacing:-.8px}
+}
+@media(max-width:560px){
+  .cols,.facts,.lang-menu,#lead{grid-template-columns:1fr}
+  .lang-menu{position:fixed;inset-inline:16px;top:auto;bottom:16px;max-height:60vh}
+  .turn.them{margin-inline-end:0}.turn.you{margin-inline-start:0}
+  .logo{font-size:20px}
+  .head-right > .btn{display:none}
+  .lang-btn{padding:9px 12px;font-size:14px}
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <div class="wrap head">
+    <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 62 32" xmlns="http://www.w3.org/2000/svg"><path class="wave" d="M13 11.5Q9.2 16 13 20.5"/><path class="wave" d="M49 11.5Q52.8 16 49 20.5"/><path class="wave d2" d="M8 7.5Q2 16 8 24.5"/><path class="wave d2" d="M54 7.5Q60 16 54 24.5"/><rect class="face" x="17" y="2" width="28" height="28" rx="9"/><circle class="eye" cx="25.6" cy="12.4" r="2.1"/><circle class="eye" cx="36.4" cy="12.4" r="2.1"/><path class="mouth" d="M25.4 18.6h11.2a5.6 5.6 0 0 1-11.2 0z"/></svg></span>4Speach</a>
+    <div class="head-right">
+      <div class="lang">
+        <button class="lang-btn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+          <svg class="globe" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8"/><path d="M2 10h16M10 2c2.5 2.5 2.5 13 0 16M10 2C7.5 4.5 7.5 15.5 10 18"/></svg>
+          <span id="langNow">한국어</span><span class="caret">▾</span>
+        </button>
+        <div class="lang-menu" id="langMenu" role="listbox" hidden></div>
+      </div>
+      <a class="btn btn-ghost" href="#start" style="padding:10px 16px;font-size:15px" data-i="nav.download">다운로드</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <figure class="epigraph">
+    <blockquote data-i="epi.quote">「자, 우리가 내려가서 거기서 그들의 언어를 혼잡하게 하여 서로 알아듣지 못하게 하자. 여호와께서 거기서 그들을 온 지면에 흩으셨으므로 그들이 그 성 쌓기를 그쳤더라」</blockquote>
+    <figcaption data-i="epi.src">창세기 11:7–8</figcaption>
+  </figure>
+</div>
+
+<section id="top" style="padding-top:0">
+  <div class="wrap hero">
+    <div class="stack">
+      <div class="eyebrow" style="margin-bottom:0" data-i="hero.eyebrow">실시간 동시통역</div>
+      <h1><span data-i="hero.h1a">상대는 자기 언어로 말하고 —</span><br><span class="alt" data-i="hero.h1b">당신은 즉시 번역을 들으며 모국어로 답합니다</span></h1>
+      <p class="lead" data-i="hero.lead">4Speach는 실시간 음성 번역기입니다. 외국어 상대방의 말을 즉시 당신의 모국어로, 당신의 대답을 상대의 언어로 바꿉니다. Zoom, Google Meet, Telegram, Discord를 비롯한 모든 앱 위에서 동작합니다.</p>
+      <div class="row">
+        <a class="btn btn-main" href="#start" data-i="hero.cta1">사용해 보기 →</a>
+        <a class="btn btn-ghost" href="#how" data-i="hero.cta2">작동 방식</a>
+      </div>
+      <div class="chips">
+        <span class="chip" data-i="hero.chip1" data-html="1">지연 <b>최대 1초</b></span>
+        <span class="chip" data-i="hero.chip2" data-html="1"><b>21</b>개 언어</span>
+        <span class="chip" data-i="hero.chip3" data-html="1"><b>내 목소리</b>, 로봇이 아니라</span>
+      </div>
+      <p class="fine" data-i="hero.fine">번역은 당신에게만 들립니다. 상대방은 당신의 목소리를 자기 언어로 듣습니다.</p>
+    </div>
+
+    <div class="dialog">
+      <div class="dialog-head"><span id="demoHead">통화, EN ↔ KO</span><span class="live" data-i="demo.live">번역 중</span></div>
+
+      <div class="turn them" style="--t:0s">
+        <div class="who"><span class="ava">EN</span><span data-i="demo.whoThem">상대가 말합니다</span><span class="eq"><i></i><i></i><i></i><i></i></span></div>
+        <p class="said">“So, what's your runway at the current burn?”</p>
+        <p class="heard" data-i="demo.t1heard">당신에게 들리는 말: 「현재 지출 속도로 자금이 얼마나 버팁니까?」</p>
+        <span class="lat">0.91 s</span>
+      </div>
+
+      <div class="turn you" style="--t:4s">
+        <div class="who"><span class="ava" id="ava2">KO</span><span data-i="demo.whoYou">당신이 답합니다</span><span class="eq"><i></i><i></i><i></i><i></i></span></div>
+        <p class="said" data-i="demo.t2said">「열네 달은 버팁니다.」</p>
+        <p class="heard" data-i="demo.t2heard">상대에게 들리는 말: “We have fourteen months of runway.”</p>
+        <span class="lat">0.98 s</span>
+      </div>
+
+      <div class="turn them" style="--t:8s">
+        <div class="who"><span class="ava">EN</span><span data-i="demo.whoThem">상대가 말합니다</span><span class="eq"><i></i><i></i><i></i><i></i></span></div>
+        <p class="said">“Good. Let's close the round by June.”</p>
+        <p class="heard" data-i="demo.t3heard">당신에게 들리는 말: 「좋습니다. 6월까지 라운드를 마무리하죠.」</p>
+        <span class="lat">0.91 s</span>
+      </div>
+
+      <p class="dialog-foot" data-i="demo.foot">각자 자기 언어로 말하고 자기 언어로 답을 듣습니다. 동시에 창에는 자막이 흐릅니다. 원문은 회색, 번역은 굵게.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="eyebrow" data-i="p2.eyebrow">익숙한 상황</div>
+    <h2 data-i="p2.h2">언어 장벽이 국제 소통의 걸림돌이 될 때</h2>
+    <p class="lead" style="margin-top:16px;max-width:none;text-align:justify" data-i="p2.lead">언어 장벽은 오늘날 소통에서 문제의 주된 원인입니다. 끊김 없이 바로 답해야 하는데, 당신은 아직 상대 문장의 앞부분을 해독하는 중입니다. 끼어듦과 멈칫거림, 되묻기가 당신이 전화를 건 이유였던 그 대화의 가치를 전부 깎아냅니다.</p>
+    <div class="grid g3 sub3" style="margin-top:34px">
+      <div class="card"><div class="kick" data-i="p2.k1">원격 근무</div><h3 data-i="p2.t1">미국 팀과의 통화</h3><p data-i="p2.p1">실력도 있고 자리도 얻었지만 데일리에서는 침묵하고, 업무의 절반을 나중에 채팅으로 확인합니다. 일이 서신 교환이 됩니다.</p></div>
+      <div class="card"><div class="kick" data-i="p2.k2">투자와 제휴</div><h3 data-i="p2.t2">펀드나 파트너와의 통화</h3><p data-i="p2.p2">피치는 외웠고 질문에도 대비했습니다. 그런데 질문은 당신의 순서대로 오지 않고, 즉답이 필요합니다.</p></div>
+      <div class="card"><div class="kick" data-i="p2.k3">구매와 협력사</div><h3 data-i="p2.t3">공급사와의 협상</h3><p data-i="p2.p3">중국, 튀르키예, 인도. 가격도 납기도 불량도 모두 말로 정해집니다. 조건 하나의 착오가 저희 제품 1년 구독료보다 비쌉니다.</p></div>
+      <div class="card"><div class="kick" data-i="p2.k4">채용</div><h3 data-i="p2.t4">외국 기업 면접</h3><p data-i="p2.p4">탈락의 이유는 역량이 아니라 외국어 말하기 속도입니다. 질문의 뜻을 그 순간 짚어 줄 존재가 필요합니다.</p></div>
+      <div class="card"><div class="kick" data-i="p2.k5">학습과 학회</div><h3 data-i="p2.t5">강의, 웨비나, 발표</h3><p data-i="p2.p5">녹화는 자막을 켜고 다시 볼 수 있지만 실시간 질의응답은 그렇지 않습니다. 질문은 발표자의 내용을 따라간 사람이 합니다.</p></div>
+      <div class="card"><div class="kick" data-i="p2.k6">이주와 일상</div><h3 data-i="p2.t6">병원, 은행, 관공서</h3><p data-i="p2.p6">오해의 대가가 놓친 거래가 아니라 잘못된 서류나 잘못된 치료가 되는 대화들입니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow" data-i="p3.eyebrow">무엇인가</div>
+    <h2 data-i="p3.h2">Zoom, Meet 그리고 모든 통화를 위한 다국어 번역기</h2>
+    <p class="lead" style="margin-top:16px;max-width:none;text-align:justify" data-i="p3.lead">4Speach는 어떤 통화 앱에서든 소리를 가져와 곧바로 당신의 모국어로 옮겨 줍니다 — 음성으로도, 텍스트로도. 반대 방향도 같습니다. 마이크에서 당신의 목소리를 가져와 번역한 뒤, 상대의 언어로 상대 스피커에 내보냅니다. 플러그인도, 회의에 넣는 봇도, 주최자의 허가도 필요 없습니다. 상대는 당신의 진짜 목소리를 듣습니다. 음색과 억양, 말버릇까지 그대로 남습니다. 제품이 빠르게 동작하기 때문에 상대는 당신이 자기 언어를 아주 잘한다는 인상을 온전히 받습니다.</p>
+    <div class="cols" style="margin-top:38px">
+      <div class="col"><div class="num" data-i="p3.n1">01 / 대상</div><h3 data-i="p3.t1">누구에게 맞는가</h3><p data-i="p3.p1">외국어 상대와의 실시간 대화에서 막히는 사람, 또는 그 언어를 전혀 모르는 사람에게.</p></div>
+      <div class="col"><div class="num" data-i="p3.n2">02 / 내용</div><h3 data-i="p3.t2">무엇을 얻는가</h3><p data-i="p3.p2">상대의 목소리가 실시간으로 당신의 모국어가 되고, 창에는 실시간 자막이 뜹니다. 원문은 회색, 번역은 굵게.</p></div>
+      <div class="col"><div class="num" data-i="p3.n3">03 / 범위</div><h3 data-i="p3.t3">어떤 프로그램에서 되는가</h3><p data-i="p3.p3">Zoom, Google Meet, Telegram, Discord, Teams, YouTube, 브라우저. 소리가 나는 모든 애플리케이션.</p></div>
+      <div class="col"><div class="num" data-i="p3.n4">04 / 없는 것</div><h3 data-i="p3.t4">일어나지 않는 일</h3><p data-i="p3.p4">예고 없이 당신 대신 로봇 음성이 나가는 일은 없습니다. 발신 번역은 당신이 직접 켭니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="eyebrow" data-i="p4.eyebrow">왜 4Speach인가</div>
+    <h2 data-i="p4.h2">4Speach가 다른 음성 번역기와 다른 여섯 가지</h2>
+    <div class="grid g3 sub2" style="margin-top:34px">
+      <div class="card"><h3 data-i="p4.t1">번역 지연 최대 1초</h3><p data-i="p4.p1">상대가 말을 마친 뒤 약 1초면 번역이 들리기 시작합니다. 모두가 기다리는 공백이 아니라 평범한 대화의 속도입니다.</p></div>
+      <div class="card"><h3 data-i="p4.t2">어떤 앱과도 동작</h3><p data-i="p4.p2">회의에 봇을 넣을 필요도, 주최자의 동의도 없습니다. 통화 입장에서 4Speach는 평범한 마이크로 보입니다.</p></div>
+      <div class="card"><h3 data-i="p4.t3">로봇이 아니라 당신의 목소리</h3><p data-i="p4.p3">짧은 녹음이면 충분합니다. 엔진이 당신의 음색과 억양을 재현합니다. 상대가 듣는 것은 합성음이 아니라 당신입니다.</p></div>
+      <div class="card"><h3 data-i="p4.t4">양방향 번역</h3><p data-i="p4.p4">수신 번역과 발신 번역이 서로 독립적으로, 동시에 작동합니다. 당신은 상대를 당신의 언어로, 상대는 당신을 자기 언어로 듣습니다.</p></div>
+      <div class="card"><h3 data-i="p4.t5">대화 후 요약</h3><p data-i="p4.p5">통화가 끝나면 4Speach가 두 언어의 전사본과 짧은 요약, 합의 사항 목록을 보냅니다. 무엇을 약속받았는지 다시 물을 필요가 없습니다.</p></div>
+      <div class="card"><h3 data-i="p4.t6">21개 언어</h3><p data-i="p4.p6">영어, 독일어, 프랑스어, 스페인어, 이탈리아어, 포르투갈어, 폴란드어, 우크라이나어, 튀르키예어, 중국어, 일본어, 한국어, 힌디어, 아랍어 등.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow" data-i="p5.eyebrow">과정</div>
+    <h2 data-i="p5.h2">통화 번역을 켜는 법: 네 단계, 4분</h2>
+    <div class="rows" style="margin-top:28px;max-width:860px">
+      <div class="rowitem"><span class="n">01</span><div><h3 data-i="p5.t1">상대의 언어를 고르고 자동 설정을 실행하세요</h3><p data-i="p5.p1">당신의 언어는 기본값으로 설정되어 있습니다. 전용 버튼이 있으니 누르기만 하면 스피커와 마이크가 자동으로 맞춰집니다.</p></div></div>
+      <div class="rowitem"><span class="n">02</span><div><h3 data-i="p5.t2">자기 목소리를 한 마디 녹음하세요</h3><p data-i="p5.p2">상대가 당신의 목소리를 듣게 하고 싶다면 짧은 문장을 녹음하세요. 원하지 않는다면 남성·여성 두 가지 음성 중에서 고를 수 있습니다.</p></div></div>
+      <div class="rowitem"><span class="n">03</span><div><h3 data-i="p5.t3">Zoom에서 4Speach 마이크와 스피커 선택</h3><p data-i="p5.p3">통화 설정의 드롭다운 두 개입니다. 이후에는 기억되어 다음 회의마다 그대로 적용됩니다.</p></div></div>
+      <div class="rowitem"><span class="n">04</span><div><h3 data-i="p5.t4">「시작」을 누르고 말하기</h3><p data-i="p5.p4">창에 실시간 자막과 즉시 음성 번역이 시작됩니다. 수신 번역과 발신 번역은 각각 독립적으로 켜집니다.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="eyebrow" data-i="p6.eyebrow">제품 사실</div>
+    <h2 data-i="p6.h2">제품 지표와 언어</h2>
+    <div class="facts" style="margin-top:30px">
+      <div class="fact"><b data-i="p6.v1">최대 1초</b><span data-i="p6.f1">문장이 끝난 순간부터 번역의 첫 소리까지의 지연</span></div>
+      <div class="fact"><b>21</b><span data-i="p6.f2">인식과 전문 번역을 지원하는 언어 수</span></div>
+      <div class="fact"><b data-i="p6.v3">99.9%</b><span data-i="p6.f3">당신의 말에 대한 번역 정확도</span></div>
+      <div class="fact"><b data-i="p6.v4">24/7/365</b><span data-i="p6.f4">가용성: 한도 안에서 사용 시간 제한 없음</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="band">
+  <div class="wrap">
+    <div class="eyebrow" data-i="p8.eyebrow">질문</div>
+    <h2 data-i="p8.h2">제품에 관해 자주 묻는 질문</h2>
+    <div style="margin-top:28px;max-width:880px">
+      <details open><summary data-i="p8.q1">상대가 제가 번역기를 쓰는 걸 알게 되나요?</summary><p data-i="p8.a1">발신 번역을 켰을 때만 그렇습니다. 그때 상대는 합성 음성을 듣습니다. 수신 번역은 당신의 헤드폰에서만 들리므로 상대는 알 수 없습니다. 수신만 쓰는 사람도 많습니다. 말은 귀로 이해하고 대답은 직접 합니다.</p></details>
+      <details><summary data-i="p8.q2">제 대화는 어디로 가나요?</summary><p data-i="p8.a2">오디오는 암호화된 채널로 Google 인프라에 있는 저희 클라우드로 전송되어 모든 보안 조건을 지키며 처리됩니다. 대화 녹음은 공개하지 않고 제3자에게 넘기지도 않습니다.</p></details>
+      <details><summary data-i="p8.q3">실시간 음성 번역에 고성능 컴퓨터가 필요한가요?</summary><p data-i="p8.a3">아니요. 무거운 연산은 모두 클라우드에서 처리되므로 그래픽카드가 필요하지 않습니다. 안정적인 인터넷이 있는 일반 업무용 노트북으로 충분합니다.</p></details>
+      <details><summary data-i="p8.q4">중요한 대목에서 번역이 틀리면요?</summary><p data-i="p8.a4">그래서 창에 자막이 있습니다. 원문은 회색, 번역은 굵게 표시됩니다. 미심쩍은 문장은 바로 눈에 띄고 그 자리에서 되물을 수 있습니다. 기계 번역은 대화의 보조이지, 계약서에 서명할 때의 변호사를 대신하지 않습니다.</p></details>
+      <details><summary data-i="p8.q5">동시통역의 지연은 얼마인가요?</summary><p data-i="p8.a5">최대 1초입니다. 측정 결과 당신의 말은 0.98초 만에 번역되어 상대에게 전달됩니다 — 문장이 끝난 시점부터 번역의 첫 소리까지 기준입니다. 모두가 기다리는 공백이 아니라 평범한 대화의 속도입니다.</p></details>
+      <details><summary data-i="p8.q6">음성 번역기가 Mac에서도 되나요?</summary><p data-i="p8.a6">현재는 Windows 10과 11입니다. macOS 버전은 작업 중이며, 아래에 이메일을 남겨 주시면 출시 당일에 알려 드립니다.</p></details>
+      <details><summary data-i="p8.q7">저와 맞지 않으면요?</summary><p data-i="p8.a7">무엇이든 결제하기 전에 실제 본인 통화에서 제품을 먼저 확인해 보세요. 맞지 않으면 30일 안에 요청만 하시면 이유를 묻지 않고 환불합니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <div class="final">
+      <div class="stack">
+        <div class="eyebrow" style="margin-bottom:0" data-i="p9.eyebrow">다음 단계</div>
+        <h2 data-i="p9.h2">다음 통화를 장벽 없이 진행하세요</h2>
+        <p class="lead" data-i="p9.lead">신청을 남겨 주세요. 제품 창립자가 직접 연락드려 4Speach 설치와 Zoom 설정을 도와드립니다. 제품은 베타 단계이며 초기 사용자는 수동으로 연결해 드립니다.</p>
+        <form id="lead" novalidate>
+          <fieldset class="tariffs">
+            <label class="tcard"><input type="radio" name="tariff" value="free"><span class="tname">Free</span><span class="tprice"><b><span data-i="p7.free">무료</span></b></span><span class="tunit">30 <span data-i="p7.mone">분</span></span></label>
+            <label class="tcard"><input type="radio" name="tariff" value="lite"><span class="tname">Lite</span><span class="tprice"><b>690</b> <span data-i="p7.pm">₽ / 월</span></span><span class="tunit">150 <span data-i="p7.mpm">분 / 월</span></span></label>
+            <label class="tcard"><input type="radio" name="tariff" value="pro" checked><span class="tname">Pro</span><span class="tprice"><b>1490</b> <span data-i="p7.pm">₽ / 월</span></span><span class="tunit">300 <span data-i="p7.mpm">분 / 월</span></span></label>
+            <label class="tcard"><input type="radio" name="tariff" value="proplus"><span class="tname">Pro+</span><span class="tprice"><b>2990</b> <span data-i="p7.pm">₽ / 월</span></span><span class="tunit">600 <span data-i="p7.mpm">분 / 월</span></span></label>
+            <label class="tcard"><input type="radio" name="tariff" value="enterprise"><span class="tname">Enterprise</span><span class="tprice"><b><span data-i="p7.req">문의</span></b></span><span class="tunit"><span data-i="p7.entu">원하는 사용량, 기업 계약</span></span></label>
+          </fieldset>
+          <p class="fine tnote" data-i="p7.note">가격은 월 기준입니다. 내 컴퓨터에서 하는 오프라인 번역은 계속 무료이고 제한이 없습니다. 분은 클라우드 엔진용입니다.</p>
+          <input type="text" id="lname" autocomplete="name" aria-describedby="formnote" placeholder="이름 *" data-i="p9.fname" data-attr="placeholder" aria-label="My name">
+          <input type="text" id="lcountry" autocomplete="country-name" aria-describedby="formnote" placeholder="국가 *" data-i="p9.fcountry" data-attr="placeholder" aria-label="My country">
+          <input type="tel" id="lphone" autocomplete="tel" aria-describedby="formnote" placeholder="연락처 전화번호" data-i="p9.fphone" data-attr="placeholder" aria-label="Contact phone">
+          <input type="text" id="ltg" autocomplete="off" aria-describedby="formnote" placeholder="내 텔레그램" data-i="p9.ftg" data-attr="placeholder" aria-label="My Telegram">
+          <input type="email" id="email" class="wide" autocomplete="email" aria-describedby="formnote" placeholder="내 이메일" data-i="p9.ph" data-attr="placeholder" aria-label="My email">
+          <button class="btn btn-main wide" type="submit" data-i="p9.btn">신청 남기기 →</button>
+        </form>
+        <p class="fine" id="formnote" data-ok="완료되었습니다. 제품 창립자가 직접 연락드려 소프트웨어 설치를 도와드립니다." data-err="주소를 확인해 주세요. name@example.com 형식이어야 합니다." data-ereq="필수 항목입니다. 입력해 주세요." data-econtact="연락 방법을 하나 이상 남겨 주세요: 전화, 텔레그램 또는 이메일." data-i="p9.note">별표 항목은 필수입니다. 연락 방법은 하나만 있으면 됩니다.</p>
+      </div>
+      <div class="inbox">
+        <div class="it"><b data-i="p9.i1b">Windows용 설치 파일</b><span data-i="p9.i1s">프로그램과 오디오 드라이버, 파일 하나</span></div>
+        <div class="it"><b data-i="p9.i2b">2분 만에 끝내는 Zoom 설정</b><span data-i="p9.i2s">스크린샷 두 장, 군더더기 없이</span></div>
+        <div class="it"><b data-i="p9.i3b">100분 선물</b><span data-i="p9.i3s">클라우드 엔진, 카드 등록 없이, 첫 활성 사용자에게</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="#top"><span class="mark" aria-hidden="true"><svg viewBox="0 0 62 32" xmlns="http://www.w3.org/2000/svg"><path class="wave" d="M13 11.5Q9.2 16 13 20.5"/><path class="wave" d="M49 11.5Q52.8 16 49 20.5"/><path class="wave d2" d="M8 7.5Q2 16 8 24.5"/><path class="wave d2" d="M54 7.5Q60 16 54 24.5"/><rect class="face" x="17" y="2" width="28" height="28" rx="9"/><circle class="eye" cx="25.6" cy="12.4" r="2.1"/><circle class="eye" cx="36.4" cy="12.4" r="2.1"/><path class="mouth" d="M25.4 18.6h11.2a5.6 5.6 0 0 1-11.2 0z"/></svg></span>4Speach</a>
+      <p style="margin-top:12px;max-width:42ch" data-i="ft.tagline">살아 있는 말을 상대방의 언어로 즉시 동시통역합니다. 통화와 협상, 그리고 어떤 앱에서든 외국 친구·파트너와의 소통에.</p>
+    </div>
+    <div>
+      <strong data-i="ft.contact">연락</strong>
+      <p class="sel">hello@4speach.com</p>
+      <p>Telegram <a class="sel" href="https://t.me/speach4" rel="noopener">@speach4</a></p>
+    </div>
+    <div>
+      <strong data-i="ft.docs">문서</strong>
+      <a href="../privacy/index.html" data-i="ft.d1">개인정보 처리방침</a>
+      <a href="../terms/index.html" data-i="ft.d2">이용약관</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:28px;font-size:13px" data-i="ft.legal">© 2026 4Speach. Windows 10/11. Zoom, Google Meet, Telegram, Discord는 각 소유자의 상표이며 4Speach는 이들과 제휴 관계가 없습니다.</div>
+</footer>
+
+<div class="cc" id="cookie" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+  <p class="cc-text" data-i="cc.text">사이트 이용 현황을 파악하기 위해 쿠키와 Yandex.Metrica를 사용합니다. 분석은 동의하신 경우에만 작동하며, 동의하지 않으면 필수 쿠키만 사용됩니다.</p>
+  <div class="cc-btns">
+    <button class="btn btn-main" type="button" id="ccYes" data-i="cc.accept">동의</button>
+    <button class="btn btn-ghost" type="button" id="ccNo" data-i="cc.decline">필수만 사용</button>
+  </div>
+</div>
+<script src="../app.js"></script>
+
+</body>
+</html>
