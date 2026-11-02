@@ -148,7 +148,7 @@
   /* Заявки уходят письмом через FormSubmit (formsubmit.co) на FORM_EMAIL.
      Пока адрес не задан, кнопка отправки выключена: форма не делает вид, что заявка ушла.
      После первой заявки FormSubmit пришлёт на этот адрес письмо с подтверждением — его нужно принять. */
-  var FORM_EMAIL = '';
+  var FORM_EMAIL = 'hello@4speach.com';
   var FORM_ENDPOINT = FORM_EMAIL ? 'https://formsubmit.co/ajax/' + FORM_EMAIL : '';
 
   var EMAIL_RE = /^[^\s@,;:"'<>()[\]\\]+@[^\s@.,;:"'<>()[\]\\]+(\.[^\s@.,;:"'<>()[\]\\]+)+$/;
